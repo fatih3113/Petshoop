@@ -242,11 +242,11 @@ public class LoginPage extends javax.swing.JFrame {
                     this.dispose();
                 } 
                 else if (Pg.getJabatan().equals("KASIR")) {
-                    FormKasir Ks = new FormKasir();
-                    Ks.P = Pg;
+                    FormKasir Ks = new FormKasir(Pg); // ✅ BENAR
                     Ks.setVisible(true);
                     this.dispose();
-                } 
+                }
+ 
                 else {
                     JOptionPane.showMessageDialog(this, "Jabatan tidak dikenal!");
                 }

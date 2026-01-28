@@ -29,7 +29,7 @@ public class NotaBelanja extends javax.swing.JFrame {
         }
         
         private void setTanggalDanKasir() {
-    // tanggal otomatis
+    // ini buat tanggal biar otomatis
             String tanggal = LocalDate.now()
                 .format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             txtTanggal.setText(tanggal);
